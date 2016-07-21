@@ -1,0 +1,93 @@
+// Normally mainpage media styles
+// You can read about usage in https://github.com/paranoida/sass-mediaqueries 
+
+
+//styles for custom device width
+@include mq($max-width: 1000px) {
+  .footer ul{
+  	list-style-position: outside;
+  }
+  .footer {
+  	font-size: 13px;
+  }
+  .main_form input.button{
+  	font-size: 11px;
+  }
+  .button_group a{
+  	font-size: 11px;
+  }
+  .button_group {
+  	margin-top: 12px;
+  }
+}
+
+@include mq($max-width: 768px) {
+	body{
+		//background:#000;
+	}
+	.footer{
+		text-align: center;
+		font-size: 14px;
+		ul{
+			list-style-position: inside;
+		}
+		.container > .row{
+			& > div{
+				border-left: none;
+				padding-left: 0px;
+				padding-bottom: 50px;
+				&:first-child{
+					border-left: none;
+				}
+			}
+		}
+	}
+	.main_form{
+		input, select{
+			margin-bottom: 25px;
+		}
+	}	
+	.button_group {
+		text-align: center;
+		margin-bottom: 50px;
+	}
+	.main{
+		min-height: 10px;
+		margin-bottom: 50px;
+	}
+
+	.header{
+		height: 100px;
+	}
+	.head_left{
+		text-align: center;
+	}
+	.button_group{
+		float: left;
+	}
+	.head_right{
+		float: right;
+	}
+	.head_info{
+		padding: 20px 0 0 0; 
+	}
+}
+
+
+
+
+
+@include mq($max-width: 500px) {
+	.head_right{
+		width: 115px;
+	}
+	.button_group, .head_right{
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+	}
+	.header{
+		height: 130px;
+	}
+}

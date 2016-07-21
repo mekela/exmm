@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="initial-scale=1"/>
+		<title>title</title>
+		<!--Favicon-->
+			<link rel="icon" type="image/png" href="favicon.ico">
+		<!--End Favicon-->
+		<!-- CSS -->
+			<link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
+			<link rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen" >
+			<link rel="stylesheet" href="css/jquery.fancybox.css" media="screen" >
+			<link href="css/screen.css" rel="stylesheet" media="screen">
+			<link href="css/style.css" rel="stylesheet" media="screen">
+		<!-- END OF CSS -->
+		<!--SCRIPT -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script src="js/jquery.fancybox.pack.js"></script>
+			<script src="js/modernizr.custom.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/common.js"></script>
+			<!--[if IE]>  
+				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+			<![endif]--> 
+		<!-- END OF SCRIPT -->
+	</head>
+<body>
+<div class="wrapper">
+<!--header-->
+<header class="header">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-12">
+				<a href="#" class="head_left">
+				<i class="fa fa-envelope-o" aria-hidden="true"></i> 
+				Обратная связь</a>
+			</div>
+			<div class="col-md-9 col-sm-9 col-xs-12">
+				<div class="head_info">
+					<div class="head_right dropdown">
+						<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>USER/Вход</button>
+						<div class="dropdown-menu" aria-labelledby="dLabel" >
+							<ul>
+								<li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i>
+								Гараж</a></li>
+								<li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+								Мои заявки</a></li>
+								<li><a href="#"><i class="fa fa-gavel" aria-hidden="true"></i>
+								Мои объявления</a></li>
+								<li><a href="#"><i class="fa fa-database" aria-hidden="true"></i>
+								Платежи</a></li>
+								<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>
+								Избранное</a></li>
+								<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+								Настройки</a></li>
+								<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>
+								Выход</a></li>
+							</ul>
+						</div>
+					</div>	
+					<div class="button_group">
+						<a href="#modal_box" class="fancybox">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+							Создать заявку
+						</a>
+						<a href="#modal_box" class="fancybox red">
+							<i class="fa fa-file-text-o" aria-hidden="true"></i>
+							Добавить объявление
+						</a>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</div>
+</header>
+<!--end-header-->
+<!--main-->
+<div class="main">
+
+	<div class="container">
+		
+		<div class="main_form">
+			<div class="row">
+				<div class="col-md-2 col-sm-3">
+					<select>
+						<option>Арендовать</option>
+						<option>Арендовать</option>
+					</select>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<input type="text" placeholder="Что ищем?">
+				</div>
+				<div class="col-md-4 col-sm-3">
+					<input type="text" placeholder="Где? (регион, город)">
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<input type="submit" value="Показать на карте" class="button btn btn-default">
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</div>
+<!--end-main-->
+<!--footer-->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4  col-sm-4">
+				<h6>информация</h6>
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Условия размещения</a></li>
+					<li><a href="#">Условия подписки</a></li>
+				</ul>
+			</div>
+			<div class="col-md-4  col-sm-4">
+				<h6>Полезное</h6>
+				<div class="row">
+					<div class="col-md-6 col-xs-6">
+						<ul>
+							<li><a href="#">Документация</a></li>
+							<li><a href="#">Запчасти</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">Каталоги</a></li>
+							<li><a href="#">Аренда</a></li>
+							<li><a href="#">Продажа</a></li>
+						</ul>
+					</div>
+					<div class="col-md-6 col-xs-6">
+						<ul>
+							<li><a href="#">Сервис</a></li>
+							<li><a href="#">Люди</a></li>
+							<li><a href="#">Заявки</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4  col-sm-4">
+				<h6>Важное</h6>
+				<ul>
+					<li><a href="#">О проекте</a></li>
+					<li><a href="#">Помощь</a></li>
+					<li><a href="#">Пользовательское соглашение</a></li>
+					<li><a href="#">Контакты</a></li>
+					<li><a href="#">Условия размещения</a></li>
+					<li><a href="#">Условия подписки</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+<!--end-footer-->
+
+<div class="modal_window" id="modal_box">
+	<h5>Some text</h5>
+</div>
+
+</div>
+</body>
+</html>

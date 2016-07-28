@@ -3,6 +3,11 @@
 
 
 //styles for custom device width
+@include mq($max-width: 1030px) {
+	.main{
+		margin: 163px 0;
+	}
+}
 @include mq($max-width: 1000px) {
   .footer ul{
   	list-style-position: outside;
@@ -22,12 +27,20 @@
 }
 
 @include mq($max-width: 768px) {
+	.main{
+		margin: 263px 0;
+	}
+}
+@include mq($max-width: 767px) {
 	body{
-		//background:#000;
+		background:#000;
+	}
+	.head_left{
+		padding-top: 33px;
 	}
 	.footer{
 		text-align: center;
-		font-size: 14px;
+		font-size: 15px;
 		ul{
 			list-style-position: inside;
 		}
@@ -53,11 +66,11 @@
 	}
 	.main{
 		min-height: 10px;
-		margin-bottom: 50px;
+		margin: 20px 0;
 	}
 
 	.header{
-		height: 100px;
+		height: 160px;
 	}
 	.head_left{
 		text-align: center;
@@ -71,6 +84,9 @@
 	.head_info{
 		padding: 20px 0 0 0; 
 	}
+	.button_group a{
+		display: block;
+	}
 }
 
 
@@ -78,6 +94,9 @@
 
 
 @include mq($max-width: 500px) {
+	.head_left{
+		padding-top: 10px;
+	}
 	.head_right{
 		width: 115px;
 	}
@@ -88,6 +107,6 @@
 		text-align: center;
 	}
 	.header{
-		height: 130px;
+		height: 180px;
 	}
 }

@@ -3189,7 +3189,7 @@ textarea {
   position: relative;
   overflow: hidden;
   min-height: 20vh;
-  margin: 280px 0;
+  margin: 250px 0;
 }
 
 .button_group {
@@ -3202,16 +3202,21 @@ textarea {
   color: #fff;
   margin-bottom: 15px;
   margin-right: 15px;
-  padding: 9px;
-  font-size: 14px;
-  color: #1974ac;
-  font-weight: bold;
+  padding: 5px 9px;
+  font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
+  background: #D4554C;
+  border-radius: 4px;
 }
 
 .button_group a.red {
-  color: #d95648;
+  color: #fff;
+  background: #4C8CB8;
+}
+
+.button_group a:hover {
+  opacity: 0.9;
 }
 
 .button_group i {
@@ -3249,6 +3254,7 @@ textarea {
   text-transform: uppercase;
   font-size: 14px;
   color: #fff;
+  background: #556076;
 }
 
 .main_form input.button:hover {
@@ -3312,6 +3318,12 @@ textarea {
 }
 
 /*----------end--modal---------------*/
+@media only screen and (max-width: 1030px) {
+  .main {
+    margin: 163px 0;
+  }
+}
+
 @media only screen and (max-width: 1000px) {
   .footer ul {
     list-style-position: outside;
@@ -3331,9 +3343,21 @@ textarea {
 }
 
 @media only screen and (max-width: 768px) {
+  .main {
+    margin: 263px 0;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  body {
+    background: #000;
+  }
+  .head_left {
+    padding-top: 33px;
+  }
   .footer {
     text-align: center;
-    font-size: 14px;
+    font-size: 15px;
   }
   .footer ul {
     list-style-position: inside;
@@ -3355,10 +3379,10 @@ textarea {
   }
   .main {
     min-height: 10px;
-    margin-bottom: 50px;
+    margin: 20px 0;
   }
   .header {
-    height: 100px;
+    height: 160px;
   }
   .head_left {
     text-align: center;
@@ -3372,9 +3396,15 @@ textarea {
   .head_info {
     padding: 20px 0 0 0;
   }
+  .button_group a {
+    display: block;
+  }
 }
 
 @media only screen and (max-width: 500px) {
+  .head_left {
+    padding-top: 10px;
+  }
   .head_right {
     width: 115px;
   }
@@ -3385,6 +3415,6 @@ textarea {
     text-align: center;
   }
   .header {
-    height: 130px;
+    height: 180px;
   }
 }

@@ -178,3 +178,24 @@
 	display: none;
 }
 /*----------end--modal---------------*/
+
+/*------------inner-pages----------------*/
+.main.main_page{
+	margin: 0;
+}
+	.bnr{
+		img{
+			display: block;
+		}
+	}
+.inner_page_wrap{
+	background:#fff;
+	display: flex;
+}
+	.sidebar{
+		width: 315px;
+		background:#3d444c;
+	}
+	.content{
+		padding: 20px 0 20px 30px;
+	}

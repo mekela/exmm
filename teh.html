@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html>
+   <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="viewport" content="initial-scale=1"/>
+		<title>title</title>
+		<!--Favicon-->
+			<link rel="icon" type="image/png" href="favicon.ico">
+		<!--End Favicon-->
+		<!-- CSS -->
+			<link rel="stylesheet" href="css/bootstrap.min.css" media="screen" >
+			<link rel="stylesheet" href="css/bootstrap-theme.min.css" media="screen" >
+			<link rel="stylesheet" href="css/jquery.fancybox.css" media="screen" >
+			<link href="css/screen.css" rel="stylesheet" media="screen">
+			<link href="css/style.css" rel="stylesheet" media="screen">
+		<!-- END OF CSS -->
+		<!--SCRIPT -->
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+			<script src="js/jquery.fancybox.pack.js"></script>
+			<script src="js/modernizr.custom.js"></script>
+			<script src="js/bootstrap.min.js"></script>
+			<script src="js/bootstrap-datepicker.js"></script>
+			<script src="js/locales/bootstrap-datepicker.ru.js" charset="UTF-8"></script>
+			<script src="js/jquery.bxslider.min.js"></script>
+			<script src="js/common.js"></script>
+			<!--[if IE]>  
+				<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>  
+			<![endif]--> 
+		<!-- END OF SCRIPT -->
+	</head>
+<body>
+	<div class="wrapper">
+		<!--header-->
+		<header class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3 col-sm-3 col-xs-12">
+						<a href="#" class="head_left">
+						<i class="fa fa-envelope-o" aria-hidden="true"></i> 
+						Обратная связь</a>
+					</div>
+					<div class="col-md-9 col-sm-9 col-xs-12">
+						<div class="head_info">
+							<div class="head_right dropdown">
+								<button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>USER/Вход</button>
+								<div class="dropdown-menu" aria-labelledby="dLabel" >
+									<ul>
+										<li><a href="#"><i class="fa fa-wrench" aria-hidden="true"></i>
+										Гараж</a></li>
+										<li><a href="#"><i class="fa fa-file-text-o" aria-hidden="true"></i>
+										Мои заявки</a></li>
+										<li><a href="#"><i class="fa fa-gavel" aria-hidden="true"></i>
+										Мои объявления</a></li>
+										<li><a href="#"><i class="fa fa-database" aria-hidden="true"></i>
+										Платежи</a></li>
+										<li><a href="#"><i class="fa fa-star" aria-hidden="true"></i>
+										Избранное</a></li>
+										<li><a href="#"><i class="fa fa-cog" aria-hidden="true"></i>
+										Настройки</a></li>
+										<li><a href="#"><i class="fa fa-sign-out" aria-hidden="true"></i>
+										Выход</a></li>
+									</ul>
+								</div>
+							</div>	
+							<div class="button_group">
+								<a href="#modal_box" class="fancybox">
+									<i class="fa fa-pencil" aria-hidden="true"></i>
+									Создать заявку
+								</a>
+								<a href="#modal_box" class="fancybox red">
+									<i class="fa fa-file-text-o" aria-hidden="true"></i>
+									Добавить объявление
+								</a>
+							</div>
+						</div>	
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="clear"></div>
+		<!--end-header-->
+
+		<!--banner-->
+		<div class="bnr" style="background-image: url('img/cabinet_bg.jpg')"></div>
+		<!--end-banner-->
+
+		<!--main-->
+		<div class="main">
+			<aside class="sidebar">
+				<div class="sidebar-head">
+					<div class="sidebar-navbar">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+				</div>
+				<div class="sidebar-nav">
+					<ul>
+						<li><a href=""><div class="nav-title">Заказы</div><div class="sidebar-icon"><i class="fa fa-check-square-o" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Корзина</div><div class="sidebar-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Баланс</div><div class="sidebar-icon"><i class="fa fa-rub" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Блокнот</div><div class="sidebar-icon"><i class="fa fa-file-text-o" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Отчеты</div><div class="sidebar-icon"><i class="fa fa-pie-chart" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Гараж</div><div class="sidebar-icon"><i class="fa fa-wrench" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Запросы</div><div class="sidebar-icon"><i class="fa fa-shopping-cart" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Друзья</div><div class="sidebar-icon"><i class="fa fa-users" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Мои автоточки</div><div class="sidebar-icon"><i class="fa fa-road" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Статистика</div><div class="sidebar-icon"><i class="fa fa-signal" aria-hidden="true"></i></div></a></li>
+						<li><a href=""><div class="nav-title">Настройки</div><div class="sidebar-icon"><i class="fa fa-cog" aria-hidden="true"></i></div></a></li>
+					</ul>
+				</div>
+			</aside>
+			<div class="container">
+				<div class="breadcrumbs">
+					<ul>
+						<li><a href="">Главная</a></li>
+						<li><a href="">Объявления об аренде</a></li>
+						<li>Гусенечный экскаватор</li>
+					</ul>
+				</div>
+				<div class="content">
+					<h3>
+						Аренда гусеничного экскаватора HITACHI ZX330LC-5G в Москва
+					</h3>
+					<div class="product_info row">
+						<div class="col-md-6">
+							<div class="product_info_slider">
+								<ul>
+									<li><img src="img/slider_img.jpg" alt=""></li>
+									<li><img src="img/slider_img.jpg" alt=""></li>
+									<li><img src="img/slider_img.jpg" alt=""></li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row">
+								<div class="col-md-6">
+									<h6>VIN: HITACHI ZX330LC-5G</h6>
+									<table>
+										<tr>
+											<td>Модель:</td>
+											<td>XCMG LW180K</td>
+										</tr>
+										<tr>
+											<td>Год выпуска:</td>
+											<td>2016</td>
+										</tr>
+										<tr>
+											<td>Цена:</td>
+											<td>28 000 USD (с НДС)</td>
+										</tr>
+										<tr>
+											<td>Наличие:</td>
+											<td>под заказ , 35 дней</td>
+										</tr>
+										<tr>
+											<td>Состояние:</td>
+											<td>новая</td>
+										</tr>
+										<tr>
+											<td>ПСМ:</td>
+											<td>оригинал</td>
+										</tr>
+									</table>
+									<a href="#" class="change_link">Изменить</a>
+									<a href="#" class="btn btn-default">Добавить фото</a>
+								</div>
+								<div class="col-md-6">
+									<div class="status">
+										<h5>Статус</h5>
+										<ul>
+											<li class="active"> <a href="#"><i class="fa fa-check" aria-hidden="true"></i> В аренде</a></li>
+											<li> <a href="#"><i class="fa fa-times" aria-hidden="true"></i> Остановить показ</a></li>
+											<li> <a href="#"><i class="fa fa-times" aria-hidden="true"></i> Удалить</a></li>
+											<li> <a href="#"><i class="fa fa-times" aria-hidden="true"></i> Выставить на продажу</a></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="capabilities row">
+						<div class="col-md-8">
+							<h3>
+								Возможности
+								<nav class="pull-right">
+									<a href="#" class="active"><i class="fa fa-list" aria-hidden="true"></i></a>
+									<a href="#"><i class="fa fa-th-large" aria-hidden="true"></i></a>
+								</nav>
+							</h3>
+							<div class="capabilities_inner row">
+								<div class="col-md-6">
+									<strong>Аренда</strong>
+									<ul>
+										<li>■  Настроить прайс-лист</li>
+										<li>■  Сдать в аренду</li>
+									</ul>
+									<strong>Запчасти</strong>
+									<ul>
+										<li>■  Купить запчасти</li>
+										<li>■  Каталог</li>
+										<li>■  Купить навесное оборудование</li>
+									</ul>
+								</div>
+								<div class="col-md-6">
+									<strong>Сервис</strong>
+									<ul>
+										<li>■  Вызвать диагноста</li>
+										<li>■  Создать заявку на ремонт</li>
+										<li>■  Создать заявку на ТО</li>
+									</ul>
+									<strong>Другое</strong>
+									<ul>
+										<li>■  Продать</li>
+										<li>■  Создать заявку на перевозку</li>
+									</ul>
+								</div>
+							</div>
+						</div>	
+					</div>
+					<div class="product_wrap">
+						<h5>Экскаваторы гусеничные</h5>
+						<div class="product_block row">
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img1.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G <br> 2008 год</p>
+										<small class="red">В аренде</small>
+									</section>
+								</article>	
+							</div>
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img1.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G <br> 2008 год</p>
+										<small class="green">В продаже</small>
+									</section>
+								</article>	
+							</div>
+						</div>
+						<div class="product_block row">
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img1.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G <br> 2008 год</p>
+										<small class="grey">На ремонте</small>
+									</section>
+								</article>	
+							</div>
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img1.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G <br> 2008 год</p>
+										<small class="green">В продаже</small>
+									</section>
+								</article>	
+							</div>
+						</div>
+						<div class="product_block row">
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img1.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G <br> 2008 год</p>
+										<small class="grey">На ремонте</small>
+									</section>
+								</article>	
+							</div>
+						</div>
+					</div>
+					<div class="product_wrap product_wrap_small">
+						<h5>Экскаваторы колесные</h5>
+						<div class="product_block row">
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img2.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G</p>
+										<div class="ovh">
+											<span class="pull-left">2008 год</span>
+											<small class="red pull-right">В аренде</small>
+										</div>
+									</section>
+								</article>	
+							</div>
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img2.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G</p>
+										<div class="ovh">
+											<span class="pull-left">2008 год</span>
+											<small class="red pull-right">В аренде</small>
+										</div>
+									</section>
+								</article>	
+							</div>
+						</div>
+						<div class="product_block row">
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img2.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G</p>
+										<div class="ovh">
+											<span class="pull-left">2008 год</span>
+											<small class="red pull-right">В аренде</small>
+										</div>
+									</section>
+								</article>	
+							</div>
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img2.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G </p>
+										<div class="ovh">
+											<span class="pull-left">2008 год</span>
+											<small class="red pull-right">В аренде</small>
+										</div>
+									</section>
+								</article>	
+							</div>
+						</div>
+						<div class="product_block row">
+							<div class="product_item col-md-6">
+								<article>
+									<img src="img/garage_img2.jpg" alt="">
+									<section>
+										<h6>Гусеничный экскаватор Wacker Neuson 1404</h6>
+										<p>VIN: HITACHI ZX330LC-5G</p>
+										<div class="ovh">
+											<span class="pull-left">2008 год</span>
+											<small class="red pull-right">В аренде</small>
+										</div>
+									</section>
+								</article>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end-main-->
+
+		<div class="modal_window" id="modal_box">
+			<h5>Some text</h5>
+		</div>
+
+	</div>
+
+</body>
+</html>

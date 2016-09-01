@@ -3,11 +3,86 @@
 
 
 //styles for custom device width
-@include mq($max-width: 1030px) {
-	.main{
-		margin: 163px 0;
+@include mq($max-width: 1300px){
+	.main .container{
+		width: 970px;
+	}
+	.box{
+		width: 300px;
+		margin-left: 20px;
+		margin-bottom: 20px;
 	}
 }
+@include mq($max-width: 1100px){	
+	.main .container{
+		width: 750px;
+	}
+	.box{
+		width: 350px;
+	}
+	.box:nth-child(3n+1){
+		margin-left: 20px;
+	}
+	.box:nth-child(2n+1){
+		margin-left: 0;
+	}
+}
+@include mq($max-width: 900px){
+	.main .container{
+		width: 640px;
+	}
+	.box{
+		width: 300px;
+		margin-left: 10px;
+		margin-bottom: 15px;
+	}
+	.box:nth-child(3n+1){
+		margin-left: 10px;
+	}
+	.box:nth-child(2n+1){
+		margin-left: 0;
+	}
+}
+@include mq($max-width: 767px){
+	.main .container{
+		width: auto;
+		padding-left: 65px;
+	}
+	.sidebar{
+		left: -170px;
+		width: 220px;
+	}
+	.sidebar-head{
+		padding: 50px 5px 10px;
+	}
+	.sidebar-nav ul li a{
+		padding: 0 5px;
+	}
+	.sidebar-icon{
+		width: 40px;
+	}
+	.box{
+		width: 100%;
+		margin-left: 0;
+	}
+	.box:nth-child(3n+1){
+		margin-left: 0;
+	}
+	.box-body{
+		height: auto;
+		margin-bottom: 5px;
+	}
+	.nav-title{
+		padding-left: 15px;
+	}
+	.bnr{
+		display: none;
+	}
+}
+
+/*--------------------------------------------*/
+
+
 @include mq($max-width: 1000px) {
   .footer ul{
   	list-style-position: outside;
@@ -26,17 +101,30 @@
   }
 }
 
-@include mq($max-width: 768px) {
-	.main{
-		margin: 263px 0;
-	}
-}
 @include mq($max-width: 767px) {
-	body{
+	.index_page{
 		background:#000;
+	}
+	.wrapper{
+		padding-top: 0;
+	}
+	.logo{
+		text-align: center;
+	}
+	.header{
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
 	}
 	.head_left{
 		padding-top: 33px;
+	}
+	.search{
+		position: relative;
+		top: auto;
+		left: auto;	
+		right: auto;
 	}
 	.footer{
 		text-align: center;
@@ -62,11 +150,7 @@
 	}	
 	.button_group {
 		text-align: center;
-		margin-bottom: 50px;
-	}
-	.main{
-		min-height: 10px;
-		margin: 20px 0;
+		margin-top: 5px;
 	}
 
 	.header{

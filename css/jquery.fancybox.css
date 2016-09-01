@@ -99,12 +99,15 @@
 
 .fancybox-close {
 	position: absolute;
-	top: -18px;
-	right: -18px;
+	/*top: 11px;
+    right: 24px;*/
+    top: -2px;
+    right: 10px;
 	width: 36px;
 	height: 36px;
 	cursor: pointer;
 	z-index: 8040;
+	background: url(../img/icons/close.png) no-repeat center;
 }
 
 .fancybox-nav {

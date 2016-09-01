@@ -71,14 +71,13 @@ q:before, q:after {
 
 //start custom styling
 body {
+  background: #fff;
   font: {
     family: $ffamily;
     weight: normal;
     size: 12px;
   };
   line-height: 1.4;
-  background:url(../img/bg.jpg) no-repeat center fixed;
-  background-size: cover;
 }
 a{
   text-decoration: underline;
@@ -152,7 +151,7 @@ textarea{
 .inline-block{display:inline-block;}
 .block{display:block;}
 .hidden{display:none;}
-
+.ovh{@include povh(''); }
 
 //main containers
 .wrapper{

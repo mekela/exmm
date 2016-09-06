@@ -77,6 +77,23 @@
 	}
 }
 @include mq($max-width: 900px){
+	.filter_wrap{
+		.btn-default{
+		margin-top: 0px;
+		position: relative;
+		left: 0px;
+		font-size: 14px;
+		i{
+			display: none;
+		}
+		}
+	}
+	.filter_select{
+		label{
+			margin-bottom: 15px;
+			display: block;
+		}
+	}
 	.main .container{
 		width: 640px;
 	}

@@ -1831,6 +1831,8 @@ h2 { position: relative; font-size: 30px; font-weight: 500; border-bottom: 2px s
 
 .checkbox_label input { position: absolute; left: 0; top: 0; height: 100%; opacity: 0; }
 
+.checkbox_label input:checked + span { font-weight: bold; color: #000; }
+
 .checkbox_label input:checked + span:before { content: "\f046"; color: #007ec4; }
 
 .checkbox_label span { padding-left: 20px; margin-right: 21px; }
@@ -1841,7 +1843,7 @@ h2 { position: relative; font-size: 30px; font-weight: 500; border-bottom: 2px s
 
 .filter_wrap ul li { padding-bottom: 20px; }
 
-.filter_wrap .btn-default, .filter_wrap .btn-primary { margin-top: 0px; position: relative; left: -50px; }
+.filter_wrap .btn-default, .filter_wrap .btn-primary { margin-top: 35px; position: relative; left: -50px; }
 
 .search_filter { position: relative; margin-bottom: 27px; }
 
@@ -2004,7 +2006,10 @@ h2 { position: relative; font-size: 30px; font-weight: 500; border-bottom: 2px s
   .product_info_slider img { max-width: 100%; }
   .product_info_slider .bx-next, .product_info_slider .bx-prev { display: none; } }
 
-@media only screen and (max-width: 900px) { .main .container { width: 640px; }
+@media only screen and (max-width: 900px) { .filter_wrap .btn-default, .filter_wrap .btn-primary { margin-top: 0px; position: relative; left: 0px; font-size: 14px; }
+  .filter_wrap .btn-default i, .filter_wrap .btn-primary i { display: none; }
+  .filter_select label { margin-bottom: 15px; display: block; }
+  .main .container { width: 640px; }
   .box { width: 300px; margin-left: 10px; margin-bottom: 15px; }
   .box:nth-child(3n+1) { margin-left: 10px; }
   .box:nth-child(2n+1) { margin-left: 0; } }
